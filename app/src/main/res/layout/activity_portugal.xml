@@ -1,0 +1,310 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer_layout"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".porcon.Portugal"
+    android:fitsSystemWindows="true"
+    tools:openDrawer="start"
+    >
+    <com.google.android.material.navigation.NavigationView
+        android:id="@+id/nav_view"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:fitsSystemWindows="true"
+        app:menu="@menu/main_menu"
+        android:layout_gravity="start"
+        app:headerLayout="@layout/header"
+        >
+
+    </com.google.android.material.navigation.NavigationView>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorWhite">
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/colorWhite">
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/porto"
+                android:minHeight="?attr/actionBarSize"
+                android:theme="?attr/actionBarTheme"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:navigationIcon="@drawable/menu_icon">
+                <TextView
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:text="PORTEKİZ SCHENGEN VİZESİ"
+                    android:textSize="17sp"
+                    android:textColor="@color/colorWhite"
+                    />
+            </androidx.appcompat.widget.Toolbar>
+
+
+            <TextView
+                android:id="@+id/text1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="Macaristan schengen vizesi için seyahat amacınıza göre farklı belgeler istenmektedir. Macaristan'a seyahat etmek için seyahat amacınıza uygun olan evraklar ile başvurmanız, doğru prosedürü izlemeniz, vize işlemlerinizin olumlu ve zamanında sonuçlanması adına çok önemlidir."
+                android:textAlignment="center"
+                android:textColor="#000000"
+                android:textSize="13sp"
+                app:fontFamily="sans-serif-light"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/toolbar" />
+
+
+            <TextView
+                android:id="@+id/text3"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:text="Aşağıda bulunan vize tiplerinden, seyahat amacınıza uygun olan hakkında detaylı bilgi sahibi olup, uygun başvuru için bizimle irtibata geçebilirsiniz."
+                android:textAlignment="center"
+                android:textColor="#000000"
+                android:textSize="13sp"
+                app:fontFamily="sans-serif-light"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/text1" />
+
+            <TextView
+                android:id="@+id/text4"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="ÖNEMLİ!!  Portekiz vizesi dışındaki geçerli vizeler için:"
+                android:textAlignment="center"
+                android:textColor="#FF0000	"
+                android:textSize="15sp"
+                app:fontFamily="sans-serif-medium"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/text3" />
+
+            <TextView
+                android:id="@+id/text5"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="Sahip olduğunuz geçerli vizeniz başvuru yapacağınız seyahat tarihlerinizin içerisinde bitiyor ise ve bu vizeniz Macaristan vizesi dışında bir schengen vizesi ise başvurunuzu yapmanız için vizenizi o ülkenin konsolosluğundan iptal ettirmeniz gerekmektedir."
+                android:textAlignment="center"
+                android:textColor="#FF0000	"
+                android:textSize="15sp"
+                app:fontFamily="sans-serif-medium"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/text4" />
+
+            <TextView
+                android:id="@+id/text6"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="Portekiz Vize Tipleri"
+                android:textAlignment="center"
+                android:textColor="#000"
+                android:textSize="25sp"
+                app:fontFamily="sans-serif-medium"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/text5" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/text7"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Lütfen hangi vize tipine başvuracağınız konusunda emin olunuz. Aşağıda vize tiplerini bulabilirsiniz."
+                android:textAlignment="center"
+                android:textColor="#000"
+                android:textSize="15sp"
+                app:fontFamily="sans-serif-black"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/text6" />
+
+            <Button
+                android:id="@+id/btn1"
+                android:layout_width="260dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/circle"
+                android:text="Turistik Vize"
+                android:textAlignment="center"
+                android:textAllCaps="false"
+                android:textColor="#FF9800"
+                android:textSize="15sp"
+                app:fontFamily="sans-serif-medium"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/text7" />
+            <Button
+                android:id="@+id/btn2"
+                android:layout_width="260dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/circle"
+                android:text="Ticari Vize"
+                android:textAlignment="center"
+                android:textAllCaps="false"
+                android:textColor="#FF9800"
+                android:textSize="15sp"
+                app:fontFamily="sans-serif-medium"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/btn1" />
+            <Button
+                android:id="@+id/btn3"
+                android:layout_width="260dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/circle"
+                android:text="Aile Veya Arkadaş Ziyareti"
+                android:textAlignment="center"
+                android:textAllCaps="false"
+                android:textColor="#FF9800"
+                android:textSize="15sp"
+                app:fontFamily="sans-serif-medium"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/btn2" />
+            <Button
+                android:id="@+id/btn4"
+                android:layout_width="260dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/circle"
+                android:text="Kültürel Amaçlı Vize"
+                android:textAlignment="center"
+                android:textAllCaps="false"
+                android:textColor="#FF9800"
+                android:textSize="15sp"
+                app:fontFamily="sans-serif-medium"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/btn3" />
+            <Button
+                android:id="@+id/btn5"
+                android:layout_width="260dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/circle"
+                android:text="Eğitim Vizesi"
+                android:textAlignment="center"
+                android:textAllCaps="false"
+                android:textColor="#FF9800"
+                android:textSize="15sp"
+                app:fontFamily="sans-serif-medium"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/btn4" />
+            <Button
+                android:id="@+id/btn6"
+                android:layout_width="260dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/circle"
+                android:text="Transit vize"
+                android:textAlignment="center"
+                android:textAllCaps="false"
+                android:textColor="#FF9800"
+                android:textSize="15sp"
+                app:fontFamily="sans-serif-medium"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/btn5" />
+            <Button
+                android:id="@+id/btn7"
+                android:layout_width="260dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/circle"
+                android:text="Sağlık Sebepli Vize"
+                android:textAlignment="center"
+                android:textAllCaps="false"
+                android:textColor="#FF9800"
+                android:textSize="15sp"
+                app:fontFamily="sans-serif-medium"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/btn6" />
+            <Button
+                android:id="@+id/btn8"
+                android:layout_width="260dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/circle"
+                android:text="Sportif Amaçlı Vize"
+                android:textAlignment="center"
+                android:textAllCaps="false"
+                android:textColor="#FF9800"
+                android:textSize="15sp"
+                app:fontFamily="sans-serif-medium"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/btn7" />
+            <Button
+                android:id="@+id/btn9"
+                android:layout_width="260dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/circle"
+                android:text="Resmi Ziyaret Vizesi"
+                android:textAlignment="center"
+                android:textAllCaps="false"
+                android:textColor="#FF9800"
+                android:textSize="15sp"
+                app:fontFamily="sans-serif-medium"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/btn8" />
+            <Button
+                android:id="@+id/btn10"
+                android:layout_width="260dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/circle"
+                android:text="Şöför Vizesi"
+                android:textAlignment="center"
+                android:textAllCaps="false"
+                android:textColor="#FF9800"
+                android:textSize="15sp"
+                app:fontFamily="sans-serif-medium"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/btn9" />
+            <Button
+                android:id="@+id/btn11"
+                android:layout_width="260dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/circle"
+                android:text="AEA(Avrupa Ekonomik Alanı)ve AB vatandaşı ile evli veya aile ferdi olan kişiler için vize"
+                android:textAlignment="center"
+                android:textAllCaps="false"
+                android:textColor="#FF9800"
+                android:textSize="10sp"
+                app:fontFamily="sans-serif-medium"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/btn10" />
+
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+</androidx.drawerlayout.widget.DrawerLayout>

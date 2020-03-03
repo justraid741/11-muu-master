@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".huncon.hunvisa.HunD.dhun1">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorWhite">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorWhite">
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/macar"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        >
+        <TextView
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="60dp"
+            android:text="MACARİSTAN SCHENGEN VİZESİ"
+            android:textSize="17sp"
+            android:textColor="@color/colorWhite"
+            />
+    </androidx.appcompat.widget.Toolbar>
+
+
+    <TextView
+        android:id="@+id/text1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="D TİPİ BAŞVURULARI İÇİN :"
+        android:textAlignment="center"
+        android:textColor="#FF0000"
+        android:textSize="20sp"
+        app:fontFamily="sans-serif-medium"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar" />
+
+
+    <TextView
+        android:id="@+id/text3"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:text="İSTANBUL'DAN YAPILACAK BAŞVURULAR İÇİN İKAMET SINIRI YOKTUR, TÜRKİYE'NİN HERHANGİ BİR YERİNDE İKAMET EDENLER İSTANBUL'DAN D TİPİ VİZE BAŞVURUSU YAPABİLİRLER. ANKARA VİZE BAŞVURU MERKEZİMİZ SADECE MARMARA VE EGE DIŞINDA İKAMET EDEN KİŞİLERİN D TİPİ VİZE BAŞVURULARINI KABUL ETMEKTEDİR."
+        android:textAlignment="center"
+        android:textColor="#FF0000"
+        android:textSize="13sp"
+        app:fontFamily="sans-serif"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text1" />
+        <TextView
+            android:id="@+id/text2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="Oturma izni için başvuranların, başvurularını İstanbul’daki AS Visa ve Ankara AS Visa merkezinden yapmaları gerekmektedir."
+            android:textAlignment="center"
+            android:textColor="#000000"
+            android:textSize="13sp"
+            app:fontFamily="sans-serif-light"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/text3" />
+        <TextView
+            android:id="@+id/text4"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="İstanbul Adres: Ergenekon Mahallesi Cumhuriyet Caddesi Fransız Hastanesi Sokağı No:5/1-2-3-4-5-6 Harbiye Şişli – İSTANBUL"
+            android:textAlignment="center"
+            android:textColor="#000000"
+            android:textSize="13sp"
+            app:fontFamily="sans-serif-light"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/text2" />
+        <TextView
+            android:id="@+id/text5"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Ankara adres : Aziziye mahallesi Cinnah caddesi no:98/1 Çankaya / ANKARA"
+            android:textAlignment="center"
+            android:textColor="#000000"
+            android:textSize="13sp"
+            app:fontFamily="sans-serif-light"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/text4" />
+        <TextView
+            android:id="@+id/text6"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="Unutulmamalıdır ki, AS Visa’daki oturma izni başvurusu sadece şahsen yapılabilmekte ve başvurunun devamındaki mülakat
+İstanbul için Macaristan Başkonsolosluğu’nda
+Macaristan Başkonsolosluğu Adres: POLAT OFİS B Blok, İmrahor Cad. Yankı Sokak No: 27 Gürsel Mah., Kağıthane – 34400 İSTANBUL"
+            android:textAlignment="center"
+            android:textColor="#000000"
+            android:textSize="13sp"
+            app:fontFamily="sans-serif-light"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/text5" />
+        <TextView
+            android:id="@+id/text7"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Ankara için Macaristan Büyükelçiliği'nde gerçekleştirilmektedir.
+Macaristan Büyükelçiliği adres : Sancak Mahallesi, Layoş Koşut Cd. No:2, 06550 Çankaya/Ankara"
+            android:textAlignment="center"
+            android:textColor="#000000"
+            android:textSize="13sp"
+            app:fontFamily="sans-serif-light"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/text6" />
+        <TextView
+        android:id="@+id/text8"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Randevunuzu bu link üzerinden alabilirsiniz:"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="19sp"
+        app:fontFamily="sans-serif-light"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text7" />
+        <TextView
+            android:autoLink="all"
+            android:linksClickable="true"
+            android:id="@+id/text9"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="1dp"
+            android:text="https://ifr.mfa.gov.hu"
+            android:textAlignment="center"
+            android:textColor="#000000"
+            android:textSize="19sp"
+            app:fontFamily="sans-serif-light"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/text8" />
+        <TextView
+            android:id="@+id/text10"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="SİSTEMDEN UYGUN TARİHE RANDEVU ALAMAYAN BAŞVURU SAHİPLERİ"
+            android:textAlignment="center"
+            android:textColor="#FF0000"
+            android:textSize="14sp"
+            app:fontFamily="sans-serif"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/text9" />
+        <TextView
+            android:autoLink="all"
+            android:linksClickable="true"
+            android:id="@+id/text11"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="İSTANBUL İÇİN consulate.ist@mfa.gov.hu"
+            android:textAlignment="center"
+            android:textColor="#000000"
+            android:textSize="16sp"
+            app:fontFamily="sans-serif-light"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/text10" />
+        <TextView
+            android:autoLink="all"
+            android:linksClickable="true"
+            android:id="@+id/text12"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="ANKARA İÇİN : consulate.ank@mfa.gov.hu"
+            android:textAlignment="center"
+            android:textColor="#000000"
+            android:textSize="16sp"
+            app:fontFamily="sans-serif-light"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/text11" />
+        <TextView
+            android:id="@+id/text13"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="ADRESİNE MAİL ATARAK DAHA ERKEN BİR TARİH İÇİN RANDEVU TALEP EDEBİLİRLER."
+            android:textAlignment="center"
+            android:textColor="#FF0000"
+            android:textSize="14sp"
+            app:fontFamily="sans-serif"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/text12" />
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+
+</FrameLayout>

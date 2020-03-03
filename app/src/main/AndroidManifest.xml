@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.mind.asvisa">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:appComponentFactory="whateverString"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:replace="android:appComponentFactory">
+        <activity android:name=".slocon.slovisa.SloTou.SloTourist"
+            android:theme="@style/Theme.AppCompat.NoActionBar"> </activity>
+        <activity android:name=".slocon.slovisa.SloTicari.SloTicari"
+            android:theme="@style/Theme.AppCompat.NoActionBar"/>
+        <activity android:name=".slocon.slovisa.SloAile.SloAile"
+            android:theme="@style/Theme.AppCompat.NoActionBar"/>
+        <activity android:name=".slocon.slovisa.SloKult.SloKult"
+            android:theme="@style/Theme.AppCompat.NoActionBar"/>
+        <activity android:name=".slocon.slovisa.SloEgitim.SloEgitim"
+            android:theme="@style/Theme.AppCompat.NoActionBar"/>
+        <activity android:name=".slocon.slovisa.SloTran.SloTransit"
+            android:theme="@style/Theme.AppCompat.NoActionBar"/>
+        <activity android:name=".slocon.slovisa.SloSag.SloSag"
+            android:theme="@style/Theme.AppCompat.NoActionBar"/>
+        <activity android:name=".slocon.slovisa.SloSpor.SloSpor"
+            android:theme="@style/Theme.AppCompat.NoActionBar"/>
+        <activity android:name=".slocon.slovisa.SloResmi.SloResmi"
+            android:theme="@style/Theme.AppCompat.NoActionBar"/>
+        <activity android:name=".slocon.slovisa.SloSofor.SloSofor"
+            android:theme="@style/Theme.AppCompat.NoActionBar"/>
+        <activity android:name=".slocon.slovisa.Sloaea.SloAea"
+            android:theme="@style/Theme.AppCompat.NoActionBar"/>
+        <activity android:name=".porcon.porvisa.PorTicari.PorTicari"
+            android:theme="@style/Theme.AppCompat.NoActionBar"/>
+        <activity android:name=".porcon.porvisa.Poraea.PorAea"
+            android:theme="@style/Theme.AppCompat.NoActionBar"/>
+        <activity android:name=".porcon.porvisa.PorAile.PorAile"
+            android:theme="@style/Theme.AppCompat.NoActionBar"/>
+        <activity android:name=".porcon.porvisa.PorEgitim.PorEgitim"
+            android:theme="@style/Theme.AppCompat.NoActionBar"/>
+        <activity android:name=".porcon.porvisa.PorKult.PorKult"
+            android:theme="@style/Theme.AppCompat.NoActionBar"/>
+        <activity android:name=".porcon.porvisa.PorResmi.PorResmi"
+            android:theme="@style/Theme.AppCompat.NoActionBar"/>
+        <activity android:name=".porcon.porvisa.PorSag.PorSag"
+            android:theme="@style/Theme.AppCompat.NoActionBar"/>
+        <activity android:name=".porcon.porvisa.PorSofor.PorSofor"
+            android:theme="@style/Theme.AppCompat.NoActionBar"/>
+        <activity android:name=".porcon.porvisa.PorSpor.PorSpor"
+            android:theme="@style/Theme.AppCompat.NoActionBar"/>
+        <activity android:name=".porcon.porvisa.PorTou.PorTourist"
+            android:theme="@style/Theme.AppCompat.NoActionBar"/>
+        <activity android:name=".porcon.porvisa.PorTran.PorTransit"
+            android:theme="@style/Theme.AppCompat.NoActionBar"/>
+        <activity android:name=".norcon.norvisa.NorTou.NorTourist"
+            android:theme="@style/Theme.AppCompat.NoActionBar"/>
+        <activity android:name=".norcon.norvisa.NorAile.NorAile"
+            android:theme="@style/Theme.AppCompat.NoActionBar"/>
+        <activity android:name=".norcon.norvisa.NorTicari.NorTicari"
+            android:theme="@style/Theme.AppCompat.NoActionBar"/>
+        <activity android:name=".norcon.norvisa.NorKult.NorKult"
+            android:theme="@style/Theme.AppCompat.NoActionBar"/>
+        <activity android:name=".norcon.norvisa.NorEgitim.NorEgitim"
+            android:theme="@style/Theme.AppCompat.NoActionBar"/>
+        <activity android:name=".norcon.norvisa.NorTran.NorTransit"
+            android:theme="@style/Theme.AppCompat.NoActionBar"/>
+        <activity android:name=".norcon.norvisa.NorSag.NorSag"
+            android:theme="@style/Theme.AppCompat.NoActionBar"/>
+        <activity android:name=".norcon.norvisa.NorSpor.NorSpor"
+            android:theme="@style/Theme.AppCompat.NoActionBar"/>
+        <activity android:name=".norcon.norvisa.NorResmi.NorResmi"
+            android:theme="@style/Theme.AppCompat.NoActionBar"/>
+        <activity android:name=".norcon.norvisa.NorSofor.NorSofor"
+            android:theme="@style/Theme.AppCompat.NoActionBar"/>
+        <activity android:name=".norcon.norvisa.Noraea.NorAea"
+            android:theme="@style/Theme.AppCompat.NoActionBar"/>
+        <activity android:name=".huncon.hunvisa.HunD.HunD"
+            android:theme="@style/Theme.AppCompat.NoActionBar"/>
+        <activity android:name=".huncon.hunvisa.Hunaea.HunAea"
+            android:theme="@style/Theme.AppCompat.NoActionBar"/>
+        <activity android:name=".huncon.hunvisa.HunSofor.HunSofor"
+            android:theme="@style/Theme.AppCompat.NoActionBar"/>
+        <activity android:name=".huncon.hunvisa.HunResmi.HunResmi"
+            android:theme="@style/Theme.AppCompat.NoActionBar"/>
+        <activity android:name=".huncon.hunvisa.HunSpor.HunSpor"
+            android:theme="@style/Theme.AppCompat.NoActionBar"/>
+        <activity android:name=".huncon.hunvisa.HunSag.HunSag"
+            android:theme="@style/Theme.AppCompat.NoActionBar"/>
+        <activity android:name=".huncon.hunvisa.HunTran.HunTransit"
+            android:theme="@style/Theme.AppCompat.NoActionBar"/>
+        <activity android:name=".huncon.hunvisa.HunEgitim.HunEgitim"
+            android:theme="@style/Theme.AppCompat.NoActionBar"/>
+        <activity android:name=".huncon.hunvisa.HunKult.HunKult"
+            android:theme="@style/Theme.AppCompat.NoActionBar"/>
+        <activity android:name=".huncon.hunvisa.HunAile.HunAile"
+            android:theme="@style/Theme.AppCompat.NoActionBar"/>
+        <activity android:name=".huncon.hunvisa.HunTicari.HunTicari"
+            android:theme="@style/Theme.AppCompat.NoActionBar"/>
+        <activity android:name=".huncon.hunvisa.HunTou.HunTourist"
+            android:theme="@style/Theme.AppCompat.NoActionBar"/>
+        <activity android:name=".MenuItems.MenuOnemli"
+            android:theme="@style/Theme.AppCompat.NoActionBar"/>
+        <activity android:name=".MenuItems.MenuGenel"
+            android:theme="@style/Theme.AppCompat.NoActionBar"/>
+        <activity
+            android:name=".MenuItems.MenuBasvuru"
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
+        <activity
+            android:name=".MenuItems.MenuRandevu"
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
+        <activity android:name=".MenuItems.MenuHome" />
+        <activity
+            android:name=".slocon.Slovak"
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
+        <activity
+            android:name=".norcon.Norway"
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
+        <activity
+            android:name=".porcon.Portugal"
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
+        <activity
+            android:name=".huncon.Hungary"
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
+        <activity android:name=".RegisterActivity" />
+        <activity android:name=".Login" />
+        <activity
+            android:name=".MainActivity"
+            android:theme="@style/AppTheme.FullScreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+    </application>
+
+</manifest>
