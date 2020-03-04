@@ -6,23 +6,23 @@
         <item
             android:id="@+id/nav_home"
             android:title="Anasayfa"
-            android:icon="@drawable/empire"/>
+            android:icon="@drawable/home"/>
         <item
             android:id="@+id/nav_randevu"
             android:title="Randevu Al"
-            android:icon="@drawable/empire"/>
+            android:icon="@drawable/calendar"/>
         <item
             android:id="@+id/nav_basvuru"
             android:title="Başvuru Sorgula"
-            android:icon="@drawable/empire"/>
+            android:icon="@drawable/visa"/>
         <item
             android:id="@+id/nav_genel"
             android:title="Genel Bilgiler"
-            android:icon="@drawable/empire"/>
+           />
         <item
             android:id="@+id/nav_onemli"
             android:title="Önemli Duyurular"
-            android:icon="@drawable/empire"/>
+            android:icon="@drawable/shout"/>
     </group>
 
     <group>
@@ -35,15 +35,15 @@
                 <item
                     android:id="@+id/nav_ozel"
                     android:title="Özel Hizmetlerimiz"
-                    android:icon="@drawable/empire"/>
+                    android:icon="@drawable/support"/>
                 <item
                     android:id="@+id/nav_seyahat"
                     android:title="Seyahat Sigortası"
-                    android:icon="@drawable/empire"/>
+                    android:icon="@drawable/health"/>
                 <item
                     android:id="@+id/nav_online"
                     android:title="Online İletişim"
-                    android:icon="@drawable/empire" />
+                    android:icon="@drawable/contact" />
             </menu>
 
             ></item>

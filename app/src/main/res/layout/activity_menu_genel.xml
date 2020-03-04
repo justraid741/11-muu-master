@@ -4,11 +4,13 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/drawer_layout"
     android:orientation="vertical"
+    android:background="@color/colorWhite"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MenuItems.MenuGenel"
     android:fitsSystemWindows="true"
     tools:openDrawer="start"
+
     >
 
     <com.google.android.material.navigation.NavigationView
@@ -34,20 +36,60 @@
                 android:id="@+id/toolbar"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:background="#1d2657"
+                android:background="@drawable/genel3"
                 android:minHeight="?attr/actionBarSize"
                 android:theme="?attr/actionBarTheme"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
                 app:navigationIcon="@drawable/menu_icon">
-                <ImageView
-                    android:layout_width="200dp"
-                    android:layout_height="65dp"
-                    android:background="@drawable/logo"
-                    android:layout_marginLeft="30dp"
-                    />
+
             </androidx.appcompat.widget.Toolbar>
+
+            <Button
+                android:textAlignment="center"
+                android:id="@+id/guv_btn"
+                android:layout_width="390dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="150dp"
+                android:text="Güvenlik Düzenlemeleri"
+                android:textSize="17sp"
+                android:textColor="@color/colorWhite"
+                android:background="@color/design_default_color_primary_dark"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/toolbar"/>
+
+            <Button
+                android:textAlignment="center"
+                android:id="@+id/ek_btn"
+                android:layout_width="390dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="65dp"
+                android:text="Ek servisler"
+                android:textSize="17sp"
+                android:textColor="@color/colorWhite"
+                android:background="@color/design_default_color_primary_dark"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/guv_btn"/>
+
+            <Button
+                android:textAlignment="center"
+                android:id="@+id/y_btn"
+                android:layout_width="390dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="65dp"
+                android:text="Yararlı linkler"
+                android:textSize="17sp"
+                android:textColor="@color/colorWhite"
+                android:background="@color/design_default_color_primary_dark"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/ek_btn"/>
+
+
+
         </androidx.constraintlayout.widget.ConstraintLayout>
     </ScrollView>
 </androidx.drawerlayout.widget.DrawerLayout>

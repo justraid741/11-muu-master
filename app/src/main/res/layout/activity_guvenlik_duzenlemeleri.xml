@@ -1,0 +1,384 @@
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer_layout"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MenuAdds.Guvenlik_duzenlemeleri"
+    android:fitsSystemWindows="true"
+    tools:openDrawer="start"
+    >
+
+    <com.google.android.material.navigation.NavigationView
+        android:id="@+id/nav_view"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:fitsSystemWindows="true"
+        app:menu="@menu/main_menu"
+        android:layout_gravity="start"
+        app:headerLayout="@layout/header"
+        >
+
+    </com.google.android.material.navigation.NavigationView>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/colorWhite">
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:background="#1d2657"
+                android:minHeight="?attr/actionBarSize"
+                android:theme="?attr/actionBarTheme"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:navigationIcon="@drawable/menu_icon">
+                <ImageView
+                    android:layout_width="200dp"
+                    android:layout_height="65dp"
+                    android:background="@drawable/logo"
+                    android:layout_marginLeft="30dp"
+                    />
+            </androidx.appcompat.widget.Toolbar>
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="KİŞİSEL VERİLERİN KORUNMASI HAKKINDA AYDINLATMA METNİ"
+                android:textSize="17sp"
+                app:fontFamily="sans-serif-medium"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/toolbar"
+                android:textAlignment="center"/>
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="AS Visa Solutions Turizm ve Ticaret Limited Şirketi (“Şirket”) olarak hizmet verdiğimiz siz değerli müşterilerimizin kişisel verilerinin korunmasına en üst düzeyde hassasiyet göstermekteyiz. Anayasa tarafından düzenlenen ve kanunlar tarafından hukuksal güvence altına alınan kişisel verilerinizin güvenli bir şekilde kullanımı için, kişisel verilerin 6698 sayılı Kişisel Verilerin Korunması Kanunu (“KVKK”)’na uygun olarak işlenerek, muhafaza edilmesine büyük önem atfetmekteyiz.  Kişisel verileriniz KVKK tarafından çizilen sınırlar çerçevesinde aşağıda izah edildiği surette işlenmektedir."
+                android:textSize="12sp"
+                app:fontFamily="sans-serif"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView"
+               />
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Kişisel Verilerin Toplanması, İşlenmesi ve İşleme Amaçları"
+                android:textSize="15sp"
+                app:fontFamily="sans-serif-medium"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView1"
+                />
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="As Visa Solutions Turizm ve Ticaret Limited Şirketi tarafından sunulan faaliyetler kapsamında toplanan, herhangi bir şekilde tarafımdan paylaşılan, internet sitesine yerleştirilen çerezler (cookies) vasıtası ile elde edilen, iş bu izin onay formu ile tarafımdan verilmiş, satın aldığım hizmetler, beyan etmiş olduğum kişisel bilgilerimin ve Kişisel verilerimin As Visa Solutions Turizm ve Ticaret Limited Şirketi tarafından; hizmet/ürün bildirimleri, yeni hizmet/ürün duyuruları, ürün ve/veya hizmetlerin tanıtımı, promosyonu, reklam, hedefleme, analiz, web sitesi/mobil uygulamalar üzerinden hizmet alanın kimlik bilgilerini teyit etmek, iletişim için adres ve diğer gerekli bilgileri kaydetmek, gerekli bilgilendirmeleri yapabilmek, elektronik (internet/mobil vs.) veya kağıt ortamında işleme dayanak olacak tüm kayıt ve belgeleri düzenlemek, kamu güvenliğine ilişkin hususlarda talep halinde ve mevzuat gereği kamu görevlilerine bilgi verilmesi, yasal yükümlülüklerin yerine getirilmesi, yasal hakların kullanılması, As Visa Solutions Turizm ve Ticaret Limited Şirketi tarafından yürütülen Ticari faaliyetlerin ve Ticari amaçların yasal mevzuat dairesinde ifası, bu bilgilerin depolanması amacı ile yurtiçinde ve yurt dışında kendi ya da hizmet aldığı ifa yardımcılarına transfer edilmesine ve mevzuata uygun şekilde korunan sunucularda saklanmasına, AYDINLATMA FORMUNDA belirtildiği/tanımlandığı şekilde, 6698 Sayılı Kişisel Verilerin Korunması Kanunu ve ilgili mevzuat düzenlemeleri kapsamında Kişisel Verileriniz İŞLENECEKTİR
+KVKK 11. Maddesi uyarınca Kişisel Veri Sahipleri aşağıdaki haklara sahiptir;"
+                android:textSize="12sp"
+                app:fontFamily="sans-serif"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView2"
+                />
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:text="• Kişisel veri işlenip işlenmediğini öğrenme,"
+                android:textSize="12sp"
+                app:fontFamily="sans-serif-medium"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView3"
+                />
+            <TextView
+                android:id="@+id/textView5"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="• Kişisel verileri işlenmişse buna ilişkin bilgi talep etme,
+"
+                android:textSize="12sp"
+                app:fontFamily="sans-serif-medium"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView4"
+                />
+            <TextView
+                android:id="@+id/textView6"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="• Kişisel verilerin işlenme amacını ve bunların amacına uygun kullanılıp kullanılmadığını öğrenme,
+"
+                android:textSize="12sp"
+                app:fontFamily="sans-serif-medium"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView5"
+                />
+            <TextView
+                android:id="@+id/textView7"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="• Yurt içinde veya yurt dışında kişisel verilerin aktarıldığı üçüncü kişileri bilme,
+"
+                android:textSize="12sp"
+                app:fontFamily="sans-serif-medium"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView6"
+                />
+            <TextView
+                android:id="@+id/textView8"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="• Kişisel verilerin eksik veya yanlış işlenmiş olması hâlinde bunların düzeltilmesini isteme ve bu kapsamda yapılan işlemin kişisel verilerin aktarıldığı üçüncü kişilere bildirilmesini isteme,
+"
+                android:textSize="12sp"
+                app:fontFamily="sans-serif-medium"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView7"
+                />
+            <TextView
+                android:id="@+id/textView9"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="• KVKK’nun ve ilgili diğer kanun hükümlerine uygun olarak işlenmiş olmasına rağmen, işlenmesini gerektiren sebeplerin ortadan kalkması hâlinde kişisel verilerin silinmesini veya yok edilmesini isteme ve bu kapsamda yapılan işlemin kişisel verilerin aktarıldığı üçüncü kişilere bildirilmesini isteme,
+"
+                android:textSize="12sp"
+                app:fontFamily="sans-serif-medium"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView8"
+                />
+            <TextView
+                android:id="@+id/textView10"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="• İşlenen verilerin münhasıran otomatik sistemler vasıtasıyla analiz edilmesi suretiyle kişinin kendisi aleyhine bir sonucun ortaya çıkmasına itiraz etme,
+"
+                android:textSize="12sp"
+                app:fontFamily="sans-serif-medium"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView9"
+                />
+            <TextView
+                android:id="@+id/textView11"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="• Kişisel verilerin kanuna aykırı olarak işlenmesi sebebiyle zarara uğraması hâlinde zararın giderilmesini talep etme haklarına sahiptir.
+
+"
+                android:textSize="12sp"
+                app:fontFamily="sans-serif-medium"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView10"
+                />
+            <TextView
+                android:id="@+id/textView12"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:text="KVKK 13. Maddesi uyarınca yukarıda belirtilen haklarınızı kullanmak ile ilgili talebinizi yazılı olarak vize merkezimize (smsiptal@as-visa.com)  iletmeniz gerekmektedir.  Talebiniz yine KVKK uyarınca en geç otuz gün içinde ücretsiz olarak sonuçlandırılacaktır. Ancak, Kişisel Verileri Koruma Kurulunca bir ücret öngörülmesi halinde,  belirlenen tarifedeki ücret alınacaktır."
+                android:textSize="12sp"
+                app:fontFamily="sans-serif"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView11"
+                />
+            <TextView
+                android:id="@+id/textView13"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="VİZE BAŞVURU MERKEZİ GÜVENLİK DUYURUSU
+
+"
+                android:textSize="15sp"
+                app:fontFamily="sans-serif-medium"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView12"
+                />
+            <TextView
+                android:id="@+id/textView14"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Macaristan Büyükelçiliği güvenlik düzenlemeleri gereğince, başvuran kişiler tarafından aşağıdaki materyallerin Vize Başvuru Merkezine sokulması yasaktır:
+
+"
+                android:textSize="12sp"
+                app:fontFamily="sans-serif"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView13"
+                />
+            <TextView
+                android:id="@+id/textView15"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="• Vize Başvuru Merkezimizde cep telefonu kullanılmaz, girişlerde telefonunuzu kapatmanız gerekmektedir.
+"
+                android:textSize="12sp"
+                app:fontFamily="sans-serif-medium"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView14"
+                />
+            <TextView
+                android:id="@+id/textView16"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="• Ses ve görüntü kaydedici cihazlar, Ses ve görüntü kasetleri, kompakt diskler (CD), MP3 çalarlar, disketler, dizüstü bilgisayarlar ya da taşınabilir müzik çalarlar gibi tüm pille çalışan elektronik cihazlar.
+"
+                android:textSize="12sp"
+                app:fontFamily="sans-serif-medium"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView15"
+                />
+            <TextView
+                android:id="@+id/textView17"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="• Evrak çantası, deri, kumaş ve benzeri materyalden üretilmiş sırt çantası, fermuarlı klasörler ve benzeri tüm çantalar. ( Sadece başvurunuzla ilgili kağıtları içeren şeffaf bir plastik poşete dosyaya izin verilir. )
+"
+                android:textSize="12sp"
+                app:fontFamily="sans-serif-medium"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView16"
+                />
+            <TextView
+                android:id="@+id/textView18"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="• Kapalı, mühürlü zarflar, kutular  ya da paketler.
+"
+                android:textSize="12sp"
+                app:fontFamily="sans-serif-medium"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView17"
+                />
+            <TextView
+                android:id="@+id/textView19"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="• Kibrit, çakmak,benzin gibi yanıcı ve parlayıcı kimyasal maddeler.
+"
+                android:textSize="12sp"
+                app:fontFamily="sans-serif-medium"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView18"
+                />
+            <TextView
+                android:id="@+id/textView20"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="• Makas, çakı, kalemtıraş, maket bıçağı ya da törpü gibi kesici ve delici aletler.
+"
+                android:textSize="12sp"
+                app:fontFamily="sans-serif-medium"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView19"
+                />
+            <TextView
+                android:id="@+id/textView21"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="• Silah veya silah amaçlı kullanılabilen patlayıcı tertibatlı nesneler.
+"
+                android:textSize="12sp"
+                app:fontFamily="sans-serif-medium"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView20"
+                />
+            <TextView
+                android:id="@+id/textView22"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:text="Yukarıdaki verilmiş olan listede yer almayan, başvuru sahibinin üzerinde bulunan herhangi bir nesne güvenlik görevlisinin inisiyatifine göre, güvenlik gereği yasaklanabilir. Güvenlik görevlisi vize başvurusunda bulunan kişilerin üzerini ve çantalarını kontrol etmek için yetki sahibidir."
+                android:textSize="12sp"
+                app:fontFamily="sans-serif"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView21"
+                />
+            <TextView
+                android:id="@+id/textView23"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Güvenlik gereğince vize başvurusu yapacak kişilerin yanlarında vize başvurusu yapmayacak kişilerin girmesi yasaktır. İşitme engelli kişilerin yanlarında işaret dili bilen tercüman ile girmelerine izin verilir. Bedensel engelli başvuru sahiplerine merkez çalışanlarımız tarafından refakat edilecek ve gerekli ilgi ve özen gösterilecektir.
+
+"
+                android:textSize="12sp"
+                app:fontFamily="sans-serif"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView22"
+                />
+            <TextView
+                android:id="@+id/textView24"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Vize Başvuru Merkezimizde, yukarıdaki maddeler arasında girişi yasak olan nesneleri emanet edebilecekleri bir yer yoktur. Başvuru için gelenlerin, bahsi geçen nesneleri girişten önce emanet etmeleri için çözüm bulmalarını rica ederiz.
+
+"
+                android:textSize="12sp"
+                app:fontFamily="sans-serif"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView23"
+                />
+
+
+
+
+
+
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+</androidx.drawerlayout.widget.DrawerLayout>

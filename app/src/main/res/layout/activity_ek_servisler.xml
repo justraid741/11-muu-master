@@ -1,0 +1,442 @@
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer_layout"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    tools:context=".MenuAdds.EkServisler"
+    android:fitsSystemWindows="true"
+    tools:openDrawer="start"
+
+    >
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/colorWhite"
+            >
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:background="#1d2657"
+                android:minHeight="?attr/actionBarSize"
+                android:theme="?attr/actionBarTheme"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:navigationIcon="@drawable/menu_icon">
+                <ImageView
+                    android:layout_width="200dp"
+                    android:layout_height="65dp"
+                    android:background="@drawable/logo"
+                    android:layout_marginLeft="30dp"
+                    />
+            </androidx.appcompat.widget.Toolbar>
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="^^ Kısa Mesaj ( SMS ) bildirim hizmeti :
+"
+                android:textColor="@android:color/secondary_text_light"
+                android:textSize="13sp"
+                app:fontFamily="sans-serif-medium"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/toolbar" />
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Vize başvurunuzun süreçlerini kısa mesaj olarak telefonunuza gelen bildirimler ile takip edebilirsiniz.
+
+"
+                android:textColor="@android:color/secondary_text_light"
+                android:textSize="12sp"
+                app:fontFamily="sans-serif"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView" />
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:text="^^ Hafta Sonu Başvuru Hizmeti :
+"
+                android:textColor="@android:color/secondary_text_light"
+                android:textSize="13sp"
+                app:fontFamily="sans-serif-medium"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView1" />
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Hafta Sonu Başvuru Hizmeti AS Visa Solutions Macaristan Portekiz Norveç ve Slovenya Schengen vize başvuru merkezi tarafından, hafta içi başvuru için yeterli zamanı bulamayanlar, iş günlerinde başvuru için izin almakta zorlanan çalışanlar, diğer günler için uygun randevu bulamayanlar ya da başvurusunu hafta sonu yapmak isteyenler için tasarlanmıştır. Cumartesi günleri saat 08:30 ile 12:30 arasında verilecek olan hizmetin randevuları sadece 0212 245 95 95 numaralı çağrı merkezimizden alınabilmekte olup sınırlı sayıda kontenjan mevcuttur."
+                android:textColor="@android:color/secondary_text_light"
+                android:textSize="12sp"
+                app:fontFamily="sans-serif"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView2" />
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="0dp"
+                android:text="Detaylı bilgi için tıklayınız
+"
+                android:textColor="@android:color/secondary_text_light"
+                android:textSize="12sp"
+                app:fontFamily="sans-serif-medium"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView3" />
+            <TextView
+                android:id="@+id/textView5"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:text="^^ Erken Saat Başvuru Hizmeti :
+
+
+"
+                android:textColor="@android:color/secondary_text_light"
+                android:textSize="13sp"
+                app:fontFamily="sans-serif-medium"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView4" />
+            <TextView
+                android:id="@+id/textView6"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Erken Saat Başvuru Hizmeti AS Visa Solutions Macaristan Portekiz Norveç ve Slovenya Schengen vize basvuru merkezi tarafından mesai saatleri öncesinde başvuru işlemlerini tamamlamak isteyen ya da istediği günde randevu bulamayanlar için tasarlanmış bir hizmettir. Normal başvurular sabah 08:30'da başlarken 'Erken Saat Başvuru Hizmeti' sabah 06:30'da başlamaktadır ve 08:15'e kadar tamamlanmaktadır. Bu hizmet için randevular sadece 0212 245 95 95 numaralı çağrı merkezimizden alınmakta olup randevular sınırlıdır.
+"
+                android:textColor="@android:color/secondary_text_light"
+                android:textSize="12sp"
+                app:fontFamily="sans-serif"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView5" />
+            <TextView
+                android:id="@+id/textView7"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="0dp"
+                android:text="Detaylı bilgi için tıklayınız
+"
+                android:textColor="@android:color/secondary_text_light"
+                android:textSize="12sp"
+                app:fontFamily="sans-serif-medium"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView6" />
+            <TextView
+                android:id="@+id/textView8"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:text="^^ VIP Başvuru Hizmeti :
+"
+                android:textColor="@android:color/secondary_text_light"
+                android:textSize="13sp"
+                app:fontFamily="sans-serif-medium"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView7" />
+            <TextView
+                android:id="@+id/textView9"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="As Visa Solutions Başvuru Merkezimizde vize başvuruları için sıra beklemek istemeyen misafirlerimiz için V.I.P. başvuru hizmeti verilmektedir.
+
+"
+                android:textColor="@android:color/secondary_text_light"
+                android:textSize="12sp"
+                app:fontFamily="sans-serif"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView8" />
+            <TextView
+                android:id="@+id/textView10"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:text="^^ Başvuru Formu Doldurma :
+"
+                android:textColor="@android:color/secondary_text_light"
+                android:textSize="13sp"
+                app:fontFamily="sans-serif-medium"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView9" />
+            <TextView
+                android:id="@+id/textView11"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Başvuru işlemlerinin daha hızlı ve doğru ilerlemesini isteyen misafirler için ücreti karşılığında 'Başvuru Formu' doldurma hizmeti verilmektedir.
+
+"
+                android:textColor="@android:color/secondary_text_light"
+                android:textSize="12sp"
+                app:fontFamily="sans-serif"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView10" />
+            <TextView
+                android:id="@+id/textView12"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:text="^^ Biyometrik Fotoğraf :
+"
+                android:textColor="@android:color/secondary_text_light"
+                android:textSize="13sp"
+                app:fontFamily="sans-serif-medium"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView11" />
+            <TextView
+                android:id="@+id/textView13"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Talep edilen Biyometrik fotoğraflarınızı, As Visa Solutions başvuru merkezimizde bulunan Biyometrik Fotoğraf Kabininde standartlara uygun bir şekilde ve dakikalar içerisinde çektirip teslim alabilirsiniz.
+
+"
+                android:textColor="@android:color/secondary_text_light"
+                android:textSize="12sp"
+                app:fontFamily="sans-serif"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView12" />
+            <TextView
+                android:id="@+id/textView14"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:text="^^ Kurye Hizmeti :
+"
+                android:textColor="@android:color/secondary_text_light"
+                android:textSize="13sp"
+                app:fontFamily="sans-serif-medium"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView13" />
+            <TextView
+                android:id="@+id/textView15"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Bireysel olarak başvurunun gerekmediği durumlarda, evraklarınız Kurye hizmeti aracılığı ile teslim edilebilmektedir.
+
+"
+                android:textColor="@android:color/secondary_text_light"
+                android:textSize="12sp"
+                app:fontFamily="sans-serif"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView14" />
+            <TextView
+                android:id="@+id/textView16"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:text="^^ Fotokopi :
+"
+                android:textColor="@android:color/secondary_text_light"
+                android:textSize="13sp"
+                app:fontFamily="sans-serif-medium"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView15" />
+            <TextView
+                android:id="@+id/textView17"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Başvuru merkezimizde fotokopi çekilebilmektedir.
+
+"
+                android:textColor="@android:color/secondary_text_light"
+                android:textSize="12sp"
+                app:fontFamily="sans-serif"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView16" />
+            <TextView
+                android:id="@+id/textView18"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:text="* Servis ücretleri aşağıdaki tablodadır :
+
+"
+                android:textAlignment="center"
+                android:textColor="@android:color/secondary_text_light"
+                android:textSize="15sp"
+                app:fontFamily="sans-serif-medium"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView17" />
+
+            <TableLayout
+                android:id="@+id/tab_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="20dp"
+                android:layout_marginHorizontal="10dp"
+                android:background="#f1f1f1"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView18">
+                <TableRow>
+                    <TextView
+                        app:fontFamily="sans-serif-medium"
+                        android:textColor="@color/colorAccent"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="İlave Hizmetler (Bu hizmetler opsiyoneldir ve bu hizmetten yararlanmak isteyenlerin ödeyecekleri hizmet bedelini temsil etmektedir.)
+    "
+                        android:textStyle="bold"
+                        android:gravity="center" />
+                </TableRow>
+                <TableRow>
+                    <TextView
+                        android:layout_weight="1"
+                        app:fontFamily="sans-serif"
+                        android:textColor="@android:color/secondary_text_light"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Kısa Mesaj (SMS) Bildirim Hizmeti	"
+                        />
+                    <TextView
+                        android:layout_weight="1"
+                        app:fontFamily="sans-serif"
+                        android:textColor="@android:color/secondary_text_light"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="5 TL (KDV DAHİL)
+"
+                        />
+                </TableRow>
+                <TableRow>
+                    <TextView
+                        android:layout_weight="1"
+                        app:fontFamily="sans-serif"
+                        android:textColor="@android:color/secondary_text_light"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Başvuru Formu Doldurma Hizmet Bedeli"
+                        />
+                    <TextView
+                        android:layout_weight="1"
+                        app:fontFamily="sans-serif"
+                        android:textColor="@android:color/secondary_text_light"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="20 TL (KDV DAHİL)
+
+"
+                        />
+                </TableRow>
+                <TableRow>
+                <TextView
+                    android:layout_weight="1"
+                    app:fontFamily="sans-serif"
+                    android:textColor="@android:color/secondary_text_light"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Fotoğraf Çektirme Bedeli (Fotokabinde fotoğraf çektirmek isteyenler için)"
+                    />
+                <TextView
+                    android:layout_weight="1"
+                    app:fontFamily="sans-serif"
+                    android:textColor="@android:color/secondary_text_light"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="25 TL (KDV DAHİL)
+
+
+"
+                    />
+            </TableRow>
+                <TableRow>
+                    <TextView
+                        android:layout_weight="1"
+                        app:fontFamily="sans-serif"
+                        android:textColor="@android:color/secondary_text_light"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Kurye Hizmeti	"
+                        />
+                    <TextView
+                        android:layout_weight="1"
+                        app:fontFamily="sans-serif"
+                        android:textColor="@android:color/secondary_text_light"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="10 EURO (KDV DAHİL)
+
+
+
+"
+                        />
+                </TableRow>
+                <TableRow>
+                    <TextView
+                        android:layout_weight="1"
+                        app:fontFamily="sans-serif"
+                        android:textColor="@android:color/secondary_text_light"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Fotokopi Ücretleri (Sayfa başına çekim ücretidir)		"
+                        />
+                    <TextView
+                        android:layout_weight="1"
+                        app:fontFamily="sans-serif"
+                        android:textColor="@android:color/secondary_text_light"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="1 TL (KDV DAHİL)
+"
+                        />
+                </TableRow>
+            </TableLayout>
+            <TextView
+                android:id="@+id/textView20"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:text="*NOT : Tüm ödemeler başvuru sırasında nakit olarak tahsil edilmektedir.
+
+"
+                android:textColor="@android:color/secondary_text_light"
+                android:textSize="13sp"
+                app:fontFamily="sans-serif-medium"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tab_layout" />
+
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+</androidx.drawerlayout.widget.DrawerLayout>

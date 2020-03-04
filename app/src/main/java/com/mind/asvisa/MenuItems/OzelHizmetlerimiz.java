@@ -11,76 +11,38 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
-import android.view.View;
-import android.widget.Button;
 
 import com.google.android.material.navigation.NavigationView;
 import com.mind.asvisa.MainActivity;
-import com.mind.asvisa.MenuAdds.EkServisler;
-import com.mind.asvisa.MenuAdds.Guvenlik_duzenlemeleri;
-import com.mind.asvisa.MenuAdds.YararliLinkler;
 import com.mind.asvisa.R;
 
-public class MenuGenel extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener {
+public class OzelHizmetlerimiz extends AppCompatActivity  implements NavigationView.OnNavigationItemSelectedListener{
     DrawerLayout drawerLayout;
     NavigationView navigationView;
     Toolbar toolbar;
-    Button y, ek, guv;
-
+    Menu menu;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_menu_genel);
+        setContentView(R.layout.activity_ozel_hizmetlerimiz);
         drawerLayout = findViewById(R.id.drawer_layout);
         navigationView = findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(this);
         toolbar = findViewById(R.id.toolbar);
-        y = findViewById(R.id.y_btn);
-        ek = findViewById(R.id.ek_btn);
-        guv = findViewById(R.id.guv_btn);
 
         setSupportActionBar(toolbar);
         navigationView.bringToFront();
         ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(this, drawerLayout, toolbar, R.string.navigation_drawer_open, R.string.navigation_drawer_close);
         drawerLayout.addDrawerListener(toggle);
         toggle.syncState();
-
-        y.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent y= new Intent(MenuGenel.this, YararliLinkler.class);
-                startActivity(y);
-
-            }
-        });
-        ek.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent y= new Intent(MenuGenel.this, EkServisler.class);
-                startActivity(y);
-
-            }
-        });
-        guv.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent y= new Intent(MenuGenel.this, Guvenlik_duzenlemeleri.class);
-                startActivity(y);
-
-            }
-        });
-
-
-
     }
-
     @Override
     public boolean onNavigationItemSelected(@NonNull MenuItem menuItem) {
         switch (menuItem.getItemId()){
 
             case R.id.nav_home:
-                Intent home=new Intent(this, MainActivity.class);
+                Intent home=new Intent(OzelHizmetlerimiz.this, MainActivity.class);
                 this.startActivity(home);
                 break;
             case R.id.nav_randevu:
@@ -99,6 +61,18 @@ public class MenuGenel extends AppCompatActivity implements NavigationView.OnNav
                 Intent on=new Intent(this, MenuOnemli.class);
                 this.startActivity(on);
                 break;
+            case R.id.nav_ozel:
+                Intent oze=new Intent(this, OzelHizmetlerimiz.class);
+                this.startActivity(oze);
+                break;
+            case R.id.nav_online:
+                Intent line=new Intent(this, Iletisim.class);
+                this.startActivity(line);
+                break;
+            case R.id.nav_seyahat:
+                Intent sey=new Intent(this, SeyahatSigortasi.class);
+                this.startActivity(sey);
+                break;
 
         }
         return true;
@@ -112,7 +86,4 @@ public class MenuGenel extends AppCompatActivity implements NavigationView.OnNav
             super.onBackPressed();
         }
     }
-
-
 }
-
